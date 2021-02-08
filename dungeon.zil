@@ -494,14 +494,6 @@ the coffin.")
 	(FDESC "The deceased adventurer's burned-out lantern is here.")
 	(SIZE 20)>
 
-<OBJECT KEYS
-        (IN MAZE-5)
-        (SYNONYM KEY)
-        (ADJECTIVE SKELETON)
-        (DESC "skeleton key")
-        (FLAGS TAKEBIT TOOLBIT)
-        (SIZE 10)>
-
 <OBJECT BAG-OF-COINS	;"was BAGCO"
 	(IN MAZE-5)
 	(SYNONYM BAG COINS TREASURE)
@@ -511,6 +503,14 @@ the coffin.")
 	(SIZE 15)
 	(VALUE 10)
 	(TVALUE 5)>
+
+<OBJECT KEYS
+        (IN MAZE-5)
+        (SYNONYM KEY)
+        (ADJECTIVE SKELETON)
+        (DESC "skeleton key")
+        (FLAGS TAKEBIT TOOLBIT)
+        (SIZE 10)>
 
 <OBJECT LAMP	;"was LAMP"
 	(IN LIVING-ROOM)
