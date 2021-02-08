@@ -89,6 +89,11 @@ and perilous adventure which has tested your wit and courage.">
 
 \
 
+<ROUTINE TROPHY-CASE-FCN ()
+    <COND (<AND <VERB? TAKE> <EQUAL? ,PRSO ,TROPHY-CASE>>
+           <TELL
+"The trophy case is securely fastened to the wall." CR>)>>
+ 
 <GLOBAL RUG-MOVED <>>
 
 <ROUTINE LIVING-ROOM-FCN (RARG "AUX" RUG? TC)

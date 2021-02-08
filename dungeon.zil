@@ -17,7 +17,7 @@
 
 <OBJECT PSEUDO-OBJECT
 	(DESC "pseudo")
-	(ACTION GRANITE)>
+	(ACTION CRETIN)>
 
 <OBJECT IT	;"was IT"
 	(IN GLOBAL-OBJECTS)
@@ -1373,7 +1373,6 @@ leading down.")
       (EAST TO EGYPT-ROOM)
       (SOUTH TO SOUTH-TEMPLE)
       (UP "You cannot reach the rope.")
-      (ACTION TORCH-ROOM-FCN)
       (GLOBAL DOME STAIRS)
       (FLAGS RLANDBIT ONBIT SACREDBIT)>
 
