@@ -921,8 +921,7 @@ by knocking down the wall on the east of the room." CR>
 "Unfortunately, you were holding it at the time.">)
 		      (T
 		       <REMOVE ,PRSO>
-		       <TELL "The " D ,PRSO " is consumed by fire." CR>)
-		      (ELSE <TELL "You don't have that." CR>)>)
+		       <TELL "The " D ,PRSO " is consumed by fire." CR>)>)
 	       (T <TELL "You can't burn a " D ,PRSO "." CR>)>>
 
 <ROUTINE PRE-TURN
