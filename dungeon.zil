@@ -990,7 +990,7 @@ at the edge of the path.")
        IF GRATE IS OPEN ELSE "You can't go through the closed grating.")
       (ACTION FOREST-ROOM)
       (FLAGS RLANDBIT ONBIT SACREDBIT)
-      (GLOBAL TREE SONGBIRD WHITE-HOUSE FOREST)>
+      (GLOBAL TREE SONGBIRD WHITE-HOUSE FOREST GRATE)>
 
 <ROOM UP-A-TREE	;"was TREE"
       (IN ROOMS)
@@ -1544,7 +1544,7 @@ the west and north.  It is possible to climb down into the canyon from here.")
       (WEST TO EAST-OF-HOUSE)
       (NORTH TO FOREST-EDGE)
       (FLAGS RLANDBIT ONBIT SACREDBIT)
-      (GLOBAL CLIMBABLE-CLIFF RIVER)>
+      (GLOBAL WHITE-HOUSE CLIMBABLE-CLIFF RIVER)>
 
 \
 

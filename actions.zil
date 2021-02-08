@@ -313,7 +313,7 @@ trap-door." CR>
 	  (<NOT <OR <EQUAL? ,HERE ,EAST-OF-HOUSE ,WEST-OF-HOUSE>
 		    <EQUAL? ,HERE ,NORTH-OF-HOUSE ,SOUTH-OF-HOUSE>>>
 	   <COND (<VERB? FIND>
-		  <COND (<==? ,HERE ,CLEARING>
+		  <COND (<==? ,HERE ,CANYON-VIEW>
 			 <TELL "It seems to be to the west." CR>)
 			(ELSE
 			 <TELL "It was here just a minute ago...." CR>)>)
@@ -376,13 +376,13 @@ trap-door." CR>
 	       (<VERB? OPEN CLOSE>
 		<COND (,GRUNLOCK
 		       <OPEN-CLOSE ,GRATE
-				   <COND (<==? ,HERE ,CLEARING>
+				   <COND (<==? ,HERE ,PATH>
 					  "The grating opens.")
 					 (T
 					  "The grating opens to reveal trees above you.")>
 				   "The grating is closed.">
 		       <COND (<FSET? ,GRATE ,OPENBIT>
-			      <COND (<AND <NOT <==? ,HERE ,CLEARING>>
+			      <COND (<AND <NOT <==? ,HERE ,PATH>>
 					  <NOT ,GRATE-REVEALED>>
 				     <TELL 
 "A pile of leaves falls onto your head and to the ground." CR>
