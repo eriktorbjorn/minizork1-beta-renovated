@@ -815,7 +815,7 @@ by knocking down the wall on the east of the room." CR>
 <ROUTINE V-PRAY
 	 ()
 	 <COND (<==? ,HERE ,SOUTH-TEMPLE>
-		<GOTO ,FOREST-1>)
+		<GOTO ,FOREST-EDGE>)
 	       (T
 		<TELL
 "Your prayers may be someday answered." CR>)>>
