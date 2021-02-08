@@ -706,10 +706,7 @@
 	<COND (.LOSS
 	       <TELL "You can't use multiple objects with '">
 	       <SET TMP <GET ,P-ITBL ,P-VERBN>>
-	       <COND (,P-OFLAG
-		      <PRINTB <GET .TMP 0>>)
-		     (T
-		      <WORD-PRINT <GETB .TMP 2> <GETB .TMP 3>>)>
+	       <WORD-PRINT <GETB .TMP 2> <GETB .TMP 3>>
 	       <TELL "'." CR>
 	       <RFALSE>)
 	      (T)>>  
