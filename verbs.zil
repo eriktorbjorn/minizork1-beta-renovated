@@ -819,6 +819,9 @@ by knocking down the wall on the east of the room." CR>
 <ROUTINE V-LISTEN ()
 	 <TELL "The " D ,PRSO " makes no sound." CR>>
 
+<ROUTINE V-LOCK ()
+	 <TELL "It doesn't seem to work." CR>>
+
 <ROUTINE V-PRAY
 	 ()
 	 <COND (<==? ,HERE ,SOUTH-TEMPLE>
@@ -933,6 +936,9 @@ by knocking down the wall on the east of the room." CR>
 		<TELL "You can't turn it with a " D ,PRSI "." CR>)>>
 
 <ROUTINE V-TURN () <TELL "This has no effect." CR>>
+
+<ROUTINE V-UNLOCK ()
+	 <V-LOCK>>
 
 <ROUTINE V-PUMP
 	 ()
