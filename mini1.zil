@@ -1,4 +1,4 @@
-"ZORK1 for
+"MINI1 for
 			     Mini-Zork '82
 	  (c) Copyright 1982 Infocom, Inc. All Rights Reserved"
 
