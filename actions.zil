@@ -1266,6 +1266,9 @@ here is on the north end." CR>
 		       <TELL "I didn't know you could walk on water vapor."
 			     CR>)>)>> 
 
+<GLOBAL SWIMYUKS
+        <LTABLE 0 "You can't swim in the dungeon.">>
+
 <GLOBAL YUKS
 	<LTABLE
 	 "A valiant attempt."

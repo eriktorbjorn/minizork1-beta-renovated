@@ -725,6 +725,9 @@ and both tumble to the ground." CR>
 		       <COND (.V? <V-FIRST-LOOK>)>
 		       <RTRUE>)>)>>
 
+<ROUTINE V-PLUG ()
+	 <TELL "This has no effect." CR>>
+
 <ROUTINE PRE-POUR-ON
 	 ()
 	 <COND (<==? ,PRSO ,WATER> <RFALSE>)
@@ -1213,3 +1216,6 @@ by knocking down the wall on the east of the room." CR>
 
 <ROUTINE V-FIND ()
 	 <TELL "You're the adventurer." CR>>
+
+<ROUTINE V-FOLLOW ()
+         <TELL "You're nuts!" CR>>
