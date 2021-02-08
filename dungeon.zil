@@ -57,6 +57,13 @@
 	(DESC "ground")
 	(ACTION GROUND-FUNCTION)>
 
+<OBJECT SAILOR
+	(IN GLOBAL-OBJECTS)
+	(SYNONYM SAILOR FOOTPAD AVIATOR)
+	(DESC "sailor")
+	(FLAGS NDESCBIT)
+	(ACTION SAILOR-FCN)>
+
 <OBJECT GRUE	;"was GRUE"
 	(IN GLOBAL-OBJECTS)
 	(SYNONYM GRUE)
@@ -140,6 +147,13 @@
 	(DESC "you")
 	(FLAGS VILLAIN)
 	(ACTION CRETIN)>
+
+<OBJECT HANDS
+        (IN GLOBAL-OBJECTS)
+        (SYNONYM PAIR HANDS HAND)
+        (ADJECTIVE BARE)
+        (DESC "pair of hands")
+        (FLAGS NDESCBIT TOOLBIT)>
 
 <OBJECT GHOST	;"was GHOST"
 	(IN ENTRANCE-TO-HADES)
@@ -479,6 +493,14 @@ the coffin.")
 	(FLAGS TAKEBIT)
 	(FDESC "The deceased adventurer's burned-out lantern is here.")
 	(SIZE 20)>
+
+<OBJECT KEYS
+        (IN MAZE-5)
+        (SYNONYM KEY)
+        (ADJECTIVE SKELETON)
+        (DESC "skeleton key")
+        (FLAGS TAKEBIT TOOLBIT)
+        (SIZE 10)>
 
 <OBJECT BAG-OF-COINS	;"was BAGCO"
 	(IN MAZE-5)

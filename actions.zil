@@ -1405,7 +1405,18 @@ and boulders at the bottom of many waterfalls.  Including this one.">)>>
 	       "The hole is getting deeper, but that's about it."
 	       "You are surrounded by a wall of sand on all sides.">>
 
-\ 
+\
+
+<ROUTINE SAILOR-FCN ()
+	  <COND (<VERB? HELLO>
+		 <SETG HS <+ ,HS 1>>
+		 <COND (<0? <MOD ,HS 20>>
+			<TELL "You seem to be repeating yourself." CR>)
+		       (<0? <MOD ,HS 10>>
+			<TELL
+"I think that phrase is getting a bit worn out." CR>)
+		       (T
+			<TELL "Nothing happens here." CR>)>)>>
 
 "SUBTITLE LURKING GRUES"
 
