@@ -14,9 +14,6 @@
 <CONSTANT LIGHT-WOUND 4>	;"defender lightly wounded"
 <CONSTANT SERIOUS-WOUND 5>	;"defender seriously wounded"
 <CONSTANT STAGGER 6>		;"defender staggered (miss turn)"
-<CONSTANT LOSE-WEAPON 7>	;"defender loses weapon"
-<CONSTANT HESITATE 8>		;"hesitates (miss on free swing)"
-<CONSTANT SITTING-DUCK 9>	;"sitting duck (crunch!)"
 
 "tables of melee results"
 
@@ -94,42 +91,27 @@
 <CONSTANT V-VILLAIN 0>	;"villain"
 <CONSTANT V-BEST 1>	;"best weapon"
 <CONSTANT V-BEST-ADV 2>	;"advantage it confers"
-<CONSTANT V-PROB 3>	;"prob of waking if unconscious"
-<CONSTANT V-MSGS 4>	;"messages for that villain"
+<CONSTANT V-MSGS 3>	;"messages for that villain"
 
 <GLOBAL VILLAINS
-	<LTABLE <TABLE TROLL SWORD 1 0 TROLL-MELEE>
-		<TABLE THIEF KNIFE 1 0 THIEF-MELEE>>>
+	<LTABLE <TABLE TROLL SWORD 1 TROLL-MELEE>
+		<TABLE THIEF KNIFE 1 THIEF-MELEE>>>
 
 \
 
 "I-FIGHT moved to DEMONS"
 
 <ROUTINE DO-FIGHT (LEN "AUX" CNT RES O OO (OUT <>))
-	<REPEAT ()
-	      <SET CNT 0>
-	      <REPEAT ()
-		      <SET CNT <+ .CNT 1>>
-		      <COND (<==? .CNT .LEN>
-			     <SET RES T>
-			     <RETURN T>)>
-		      <SET OO <GET ,VILLAINS .CNT>>
-		      <SET O <GET .OO ,V-VILLAIN>>
-		      <COND (<NOT <FSET? .O ,FIGHTBIT>>)
-			    (<NOT <SET RES
-				       <VILLAIN-BLOW
-					.OO
-					.OUT>>>
-			     <SET RES <>>
-			     <RETURN>)
-			    (<==? .RES ,UNCONSCIOUS>
-			     <SET OUT <+ 1 <RANDOM 3>>>)>>
-	      <COND (.RES
-		     <COND (<NOT .OUT> <RETURN>)
-			   (T
-			    <SET OUT <- .OUT 1>>
-			    <COND (<0? .OUT> <RETURN>)>)>)
-		    (ELSE <RETURN>)>>>
+	 <SET CNT 0>
+	 <REPEAT ()
+		 <SET CNT <+ .CNT 1>>
+		 <COND (<==? .CNT .LEN>
+			<RETURN T>)>
+		 <SET OO <GET ,VILLAINS .CNT>>
+		 <SET O <GET .OO ,V-VILLAIN>>
+		 <COND (<NOT <FSET? .O ,FIGHTBIT>>)
+		       (<NOT <VILLAIN-BLOW .OO>>
+			     <RETURN>)>>>
 
 \
 
@@ -188,7 +170,7 @@ property, which is normally 0"
 
 \
 
-<ROUTINE VILLAIN-BLOW (OO OUT?
+<ROUTINE VILLAIN-BLOW (OO
 		       "AUX" (VILLAIN <GET .OO ,V-VILLAIN>)
 		       (REMARKS <GET .OO ,V-MSGS>)
 		       DWEAPON ATT DEF OA OD TBL RES NWEAPON)
@@ -220,8 +202,8 @@ property, which is normally 0"
 		  <PICK-ONE <GET .REMARKS <- .RES 1>>>
 		  ,WINNER
 		  .DWEAPON>)>
-	 <COND (<OR <==? .RES ,MISSED> <==? .RES ,HESITATE>>)
-	       (<OR <==? .RES ,KILLED> <==? .RES ,SITTING-DUCK>> <SET DEF 0>)
+	 <COND (<==? .RES ,MISSED>)
+	       (<==? .RES ,KILLED> <SET DEF 0>)
 	       (<==? .RES ,LIGHT-WOUND>
 		<SET DEF <- .DEF 1>>
 		<COND (<L? .DEF 0> <SET DEF 0>)>
@@ -280,8 +262,8 @@ ineffective." CR>
 	  <PICK-ONE <GET ,HERO-MELEE <- .RES 1>>>
 	  ,PRSO
 	  ,PRSI>
-	 <COND (<EQUAL? .RES ,MISSED ,HESITATE>)
-	       (<EQUAL? .RES ,KILLED ,SITTING-DUCK> <SET DEF 0>)
+	 <COND (<EQUAL? .RES ,MISSED>)
+	       (<EQUAL? .RES ,KILLED> <SET DEF 0>)
 	       (<==? .RES ,LIGHT-WOUND>
 		<SET DEF <- .DEF 1>>
 		<COND (<L? .DEF 0> <SET DEF 0>)>)

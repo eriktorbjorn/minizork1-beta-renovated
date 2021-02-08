@@ -11,32 +11,16 @@
 	      <COND (<IN? <SET O <GET .OO ,V-VILLAIN>> ,HERE>
 		     <COND (<AND <==? .O ,THIEF> ,THIEF-ENGROSSED>
 			    <SETG THIEF-ENGROSSED <>>)
-			   (<L? <GETP .O ,P?STRENGTH> 0>
-			    <SET P <GET .OO ,V-PROB>>
-			    <COND (<AND <NOT <0? .P>> <PROB .P>>
-				   <PUT .OO ,V-PROB 0>
-				   <AWAKEN .O>)
-				  (ELSE
-				   <PUT .OO ,V-PROB <+ .P 25>>)>)
 			   (<OR <FSET? .O ,FIGHTBIT>
 				<APPLY <GETP .O ,P?ACTION> ,F-FIRST?>>
 			    <SET FIGHT? T>)>)
 		    (ELSE
-		     <COND (<FSET? .O ,FIGHTBIT>
-			    <APPLY <GETP .O ,P?ACTION> ,F-BUSY?>)>
 		     <COND (<==? .O ,THIEF> <SETG THIEF-ENGROSSED <>>)>
 		     <FCLEAR ,WINNER ,STAGGERED>
 		     <FCLEAR .O ,STAGGERED>
-		     <FCLEAR .O ,FIGHTBIT>
-		     <AWAKEN .O>)>>
+		     <FCLEAR .O ,FIGHTBIT>)>>
       <COND (<NOT .FIGHT?> <RTRUE>)>
       <DO-FIGHT .LEN>>
-
-<ROUTINE AWAKEN (O "AUX" (S <GETP .O ,P?STRENGTH>))
-	 <COND (<L? .S 0>
-		<PUTP .O ,P?STRENGTH <- 0 .S>>
-		<APPLY <GETP .O ,P?ACTION> ,F-CONSCIOUS>)>
-	 T>
 
 "SWORD demon"
 

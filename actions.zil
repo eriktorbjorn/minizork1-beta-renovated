@@ -254,7 +254,6 @@ trap-door." CR>
 		<COND (<OR <AND <VERB? THROW GIVE>
 				<==? ,PRSI ,TROLL>>
 			   <VERB? TAKE MOVE MUNG>>
-		       <AWAKEN ,TROLL>
 		       <COND (<VERB? THROW GIVE>
 			      <TELL
 "The troll grabs the " D ,PRSO " and eats it." CR>

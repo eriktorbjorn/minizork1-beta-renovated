@@ -1118,13 +1118,8 @@ by knocking down the wall on the east of the room." CR>
 	 ()
 	 <COND (<==? ,PRSI ,ROPE>
 		<COND (<FSET? ,PRSO ,VILLAIN>
-		       <COND (<L? <GETP ,PRSO ,P?STRENGTH> 0>
-			      <TELL
-"Your attempt to tie up the " D ,PRSO " awakens him.">
-			      <AWAKEN ,PRSO>)
-			     (ELSE
-			      <TELL
-"The " D ,PRSO " struggles and you cannot tie him up." CR>)>)
+		       <TELL
+"The " D ,PRSO " struggles and you cannot tie him up." CR>)
 		      (ELSE <WHY>)>)
 	       (ELSE <TELL "You'd never tie it with that!" CR>)>>
 
@@ -1137,12 +1132,7 @@ by knocking down the wall on the east of the room." CR>
 
 <ROUTINE V-ALARM ()
 	 <COND (<FSET? ,PRSO ,VILLAIN>
-		<COND (<L? <GETP ,PRSO ,P?STRENGTH> 0>
-		       <TELL "The " D ,PRSO " is rudely awakened." CR>
-		       <AWAKEN ,PRSO>)
-		      (T
-		       <TELL "He's wide awake, or haven't you noticed..."
-			     CR>)>)
+		<TELL "He's wide awake, or haven't you noticed..." CR>)
 	       (ELSE
 		<TELL "The " D ,PRSO " isn't sleeping." CR>)>>
 
