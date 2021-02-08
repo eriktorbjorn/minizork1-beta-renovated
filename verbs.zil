@@ -683,6 +683,9 @@ and both tumble to the ground." CR>
 "You realize that getting out would probably be fatal." CR>
 		<RFATAL>)>>
 
+<ROUTINE V-BLAST ()
+         <TELL "You can't blast anything by using words." CR>>
+
 <ROUTINE V-BREATHE ()
 	 <PERFORM ,V?INFLATE ,PRSO ,LUNGS>>
 
@@ -1074,6 +1077,15 @@ by knocking down the wall on the east of the room." CR>
 	       (ELSE <YUK>)>>
 
 <ROUTINE V-DIG () <RTRUE>>
+
+<ROUTINE V-SKIP ()
+         <TELL <PICK-ONE ,WHEEEEE> CR>>
+
+<GLOBAL WHEEEEE
+        <LTABLE 0 "Very good. Now you can go to the second grade."
+               "Are you enjoying yourself?"
+               "Wheeeeeeeeee!!!!!"
+               "Do you expect me to applaud?">>
 
 <ROUTINE V-SMELL () <TELL "It smells like a " D ,PRSO "." CR>>
 
