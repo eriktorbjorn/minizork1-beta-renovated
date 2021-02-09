@@ -372,6 +372,22 @@ trap-door." CR>
     	 <COND (<AND <VERB? OPEN> <==? ,PRSI ,KEYS>>
 		<PERFORM ,V?UNLOCK ,GRATE ,KEYS>
 		<RTRUE>)
+	       ;(<VERB? LOCK>
+		<COND (<EQUAL? ,HERE ,GRATING-ROOM>
+		       <SETG GRUNLOCK <>>
+		       <TELL "The grate is locked." CR>)
+	              (<EQUAL? ,HERE ,PATH>
+		       <TELL "You can't lock it from this side." CR>)>)
+	       ;(<AND <VERB? UNLOCK> <EQUAL? ,PRSO ,GRATE>>
+		<COND (<AND <EQUAL? ,HERE ,GRATING-ROOM> <EQUAL? ,PRSI ,KEYS>>
+		       <SETG GRUNLOCK T>
+		       <TELL "The grate is unlocked." CR>)
+		      (<AND <EQUAL? ,HERE ,PATH>
+			    <EQUAL? ,PRSI ,KEYS>>
+		       <TELL "You can't reach the lock from here." CR>)
+		      (T
+		       <TELL
+"Can you unlock a grating with a " D ,PRSI "?" CR>)>)
 	       (<VERB? OPEN CLOSE>
 		<COND (,GRUNLOCK
 		       <OPEN-CLOSE ,GRATE

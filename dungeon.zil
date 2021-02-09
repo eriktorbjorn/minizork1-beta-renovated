@@ -505,12 +505,14 @@ the coffin.")
 	(TVALUE 5)>
 
 <OBJECT KEYS
-        (IN MAZE-5)
-        (SYNONYM KEY)
-        (ADJECTIVE SKELETON)
-        (DESC "skeleton key")
-        (FLAGS TAKEBIT TOOLBIT)
-        (SIZE 10)>
+	; "The original game file had no key. I've added it to make it compile
+	   but it can never be found."
+	; (IN MAZE-5)
+	(SYNONYM KEY)
+	(ADJECTIVE SKELETON)
+	(DESC "skeleton key")
+	(FLAGS TAKEBIT TOOLBIT)
+	(SIZE 10)>
 
 <OBJECT LAMP	;"was LAMP"
 	(IN LIVING-ROOM)
