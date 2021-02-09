@@ -2,7 +2,7 @@
 			     Mini-Zork '82
 	  (c) Copyright 1982 Infocom, Inc. All Rights Reserved"
 
-<CONSTANT RELEASEID 1>
+<CONSTANT RELEASEID 3>
 <VERSION ZIP>
 
 <FREQUENT-WORDS?>
