@@ -779,7 +779,7 @@ against one wall.  He is armed with a deadly stiletto.")
 
 <OBJECT TRUNK	;"was TRUNK"
 	(IN RESERVOIR)
-	(SYNONYM TRUNK TREASURE)
+	(SYNONYM TRUNK JEWELS TREASURE)
 	(DESC "trunk of jewels")
 	(FLAGS TAKEBIT INVISIBLE)
 	(FDESC
