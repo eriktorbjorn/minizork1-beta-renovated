@@ -106,8 +106,8 @@ west is an old wooden door, which has a cyclops-sized hole in it,">)
 		     (T
 		      <TELL
 "You are in the living room.  There is a door to the east, a rustic wooden
-door to the west, which appears to be nailed shut, ">)>
-	       <TELL "a trophy case, ">
+door to the west, which appears to be nailed shut,">)>
+	       <TELL " a trophy case, ">
 	       <SET RUG? ,RUG-MOVED>
 	       <COND (<AND .RUG? <FSET? ,TRAP-DOOR ,OPENBIT>>
 		      <TELL
