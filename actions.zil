@@ -335,13 +335,16 @@ trap-door." CR>
 	  (<VERB? BURN>
 	   <TELL "You must be joking." CR>)>>
     
-<ROUTINE CLEARING-FCN (RARG)
+<ROUTINE PATH-FCN (RARG)
+	 <FOREST-ROOM .RARG>
   	 <COND (<==? .RARG ,M-ENTER>
 		<COND (<NOT ,GRATE-REVEALED>
 		       <FSET ,GRATE ,INVISIBLE>)>)
 	       (<==? .RARG ,M-LOOK>
-		<TELL 
-"You are in a clearing within a forest.  Paths lead south, east, and west.">
+		<TELL
+"This is a path winding through a dimly-lit forest.  The path turns a corner
+here, heading south and east.  One large tree with some low branches stands
+at the edge of the path.">
 		<COND (<FSET? ,GRATE ,OPENBIT>
 		       <CRLF>
 		       <TELL

@@ -980,17 +980,13 @@ thin out.")
 
 <ROOM PATH	;"was FORE3"
       (IN ROOMS)
-      (LDESC
-"This is a path winding through a dimly-lit forest.  The path turns a corner
-here, heading south and east.  One large tree with some low branches stands
-at the edge of the path.")
       (DESC "Forest Path")
       (UP TO UP-A-TREE)
       (EAST TO FOREST-EDGE)
       (SOUTH TO NORTH-OF-HOUSE)
       (DOWN TO GRATING-ROOM
        IF GRATE IS OPEN ELSE "You can't go through the closed grating.")
-      (ACTION FOREST-ROOM)
+      (ACTION PATH-FCN)
       (FLAGS RLANDBIT ONBIT SACREDBIT)
       (GLOBAL TREE SONGBIRD WHITE-HOUSE FOREST GRATE)>
 
