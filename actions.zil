@@ -96,8 +96,8 @@ and perilous adventure which has tested your wit and courage.">
  
 <GLOBAL RUG-MOVED <>>
 
-<ROUTINE LIVING-ROOM-FCN (RARG "AUX" RUG? TC)
-	#DECL ((RUG?) <OR ATOM FALSE> (TC) OBJECT)
+<ROUTINE LIVING-ROOM-FCN (RARG "AUX" RUG?)
+	#DECL ((RUG?) <OR ATOM FALSE>)
 	<COND (<==? .RARG ,M-LOOK>
 	       <COND (,MAGIC-FLAG
 		      <TELL
@@ -864,7 +864,7 @@ this fine " D .X " is doing here.\"" CR>
 
 <GLOBAL THIEF-ENGROSSED <>>
 
-<ROUTINE ROBBER-FUNCTION ("OPTIONAL" (MODE <>) "AUX" (FLG <>) X N)
+<ROUTINE ROBBER-FUNCTION ("OPTIONAL" (MODE <>) "AUX" (FLG <>) X)
 	 #DECL ((DEM) HACK (FLG) <OR ATOM FALSE>)
 	 <COND (<NOT .MODE>
 		<COND (<AND <==? ,PRSO ,KNIFE>
@@ -927,7 +927,7 @@ D ,PRSO " and stops to admire its beauty." CR>)
 			    <NOT <FSET? ,THIEF ,INVISIBLE>>>
 		       <TELL "You'd be stabbed in the back!" CR>)>)>>
 
-<ROUTINE TREASURE-ROOM-FCN (RARG "AUX" (FLG <>) TL)
+<ROUTINE TREASURE-ROOM-FCN (RARG "AUX" (FLG <>))
 	 #DECL ((FLG) <OR ATOM FALSE>)
   <COND (<AND <==? .RARG ,M-ENTER>
 	      <1? <GET <INT I-THIEF> ,C-ENABLED?>>
@@ -942,7 +942,7 @@ D ,PRSO " and stops to admire its beauty." CR>)
 		<FSET ,THIEF ,FIGHTBIT>)>
 	 <THIEF-IN-TREASURE>)>>
 
-<ROUTINE THIEF-IN-TREASURE ("AUX" F N)
+<ROUTINE THIEF-IN-TREASURE ("AUX" F)
 	 <SET F <FIRST? ,HERE>>
 	 <COND (<AND .F <NEXT? .F>>
 		<TELL
@@ -1049,7 +1049,7 @@ D ,PRSO " and stops to admire its beauty." CR>)
 
 "SUBTITLE COAL MINE"
 
-<ROUTINE BOOM-ROOM (RARG "AUX" (DUMMY? <>) FLAME)
+<ROUTINE BOOM-ROOM (RARG "AUX" (DUMMY? <>))
          <COND (<NOT .RARG>
 		<COND (<IN? ,TORCH ,WINNER>
 		       <TELL " ** BOOOOOOM **" CR>
@@ -1455,7 +1455,7 @@ you!" CR>)
 
 "SUBTITLE TOITY POIPLE BOIDS A CHOIPIN' AN' A BOIPIN' ... "
 
-<ROUTINE TREE-ROOM (RARG "AUX" F)
+<ROUTINE TREE-ROOM (RARG)
 	 <COND (<==? .RARG ,M-LOOK>
 		<TELL
 "You are about 10 feet above the ground nestled among some large
@@ -1489,7 +1489,7 @@ compromised its esthetic appeal." CR>
 "There is a delicate crunch from beneath you.">
 		<OPEN-EGG>)>>
 
-<ROUTINE OPEN-EGG ("AUX" L)
+<ROUTINE OPEN-EGG ()
 	 <TELL
 "Nestled inside the now broken egg is a golden clockwork canary." CR>
 	 <MOVE ,BROKEN-EGG <LOC ,EGG>>

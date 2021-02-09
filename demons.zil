@@ -1,7 +1,7 @@
 "Fighting demon"
 
 <ROUTINE I-FIGHT ("AUX" (FIGHT? <>) (LEN <GET ,VILLAINS 0>)
-		  CNT OO O P) 
+		  CNT OO O) 
       <COND (,DEAD <RTRUE>)>
       <SET CNT 0>
       <REPEAT ()
@@ -61,7 +61,7 @@
 
 "THIEF demon"
 
-<ROUTINE I-THIEF ("AUX" (RM <LOC ,THIEF>) ROBJ HERE? (ONCE <>))
+<ROUTINE I-THIEF ("AUX" (RM <LOC ,THIEF>) HERE? (ONCE <>))
    <PROG ()
      <COND (<SET HERE? <NOT <FSET? ,THIEF ,INVISIBLE>>>
 	    <SET RM <LOC ,THIEF>>)>

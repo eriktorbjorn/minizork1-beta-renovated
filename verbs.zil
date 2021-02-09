@@ -197,8 +197,8 @@ for the final secret.\"" CR>)>
 	 <V-SCORE>
 	 <QUIT>>
 
-<ROUTINE V-QUIT ("OPTIONAL" (ASK? T) "AUX" SCOR)
-	 #DECL ((ASK?) <OR ATOM <PRIMTYPE LIST>> (SCOR) FIX)
+<ROUTINE V-QUIT ("OPTIONAL" (ASK? T))
+	 #DECL ((ASK?) <OR ATOM <PRIMTYPE LIST>>)
 	 <V-SCORE>
 	 <COND (<OR <AND .ASK?
 			 <TELL 
@@ -663,8 +663,7 @@ and both tumble to the ground." CR>
 	 <RFATAL>>
 
 <ROUTINE V-BOARD
-	 ("AUX" AV)
-	 #DECL ((AV) OBJECT)
+	 ()
 	 <TELL "You are now in the " D ,PRSO "." CR>
 	 <MOVE ,WINNER ,PRSO>
 	 <APPLY <GETP ,PRSO ,P?ACTION> ,M-ENTER>
@@ -1061,7 +1060,7 @@ by knocking down the wall on the east of the room." CR>
 
 <ROUTINE V-EXORCISE () <TELL "What a bizarre concept!" CR>>
 
-<ROUTINE V-SHAKE ("AUX" X)
+<ROUTINE V-SHAKE ()
 	 <COND (<FSET? ,PRSO ,VILLAIN>
 		<YUK>)
 	       (<NOT <FSET? ,PRSO ,TAKEBIT>>
@@ -1179,8 +1178,7 @@ by knocking down the wall on the east of the room." CR>
 <ROUTINE V-WIND ()
 	 <TELL "You cannot wind up a " D ,PRSO "." CR>>
 
-<ROUTINE V-COUNT ("AUX" OBJS CNT)
-    #DECL ((CNT) FIX)
+<ROUTINE V-COUNT ()
     <COND (<==? ,PRSO ,LEAVES>
 	   <TELL "There are 69,105 leaves here." CR>)
 	  (T
