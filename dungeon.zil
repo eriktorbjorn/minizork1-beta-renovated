@@ -1374,6 +1374,19 @@ leading down.")
       (GLOBAL DOME STAIRS)
       (FLAGS RLANDBIT ONBIT SACREDBIT)>
 
+<OBJECT PRAYER
+	(IN NORTH-TEMPLE)
+	(SYNONYM PRAYER INSCRIPTION)
+	(ADJECTIVE ANCIENT OLD)
+	(DESC "prayer")
+	(FLAGS READBIT SACREDBIT NDESCBIT)
+	(TEXT
+"The prayer is inscribed in an ancient script, rarely used today. It seems
+to be a philippic against small insects, absent-mindedness, and the picking
+up and dropping of small objects. The final verse consigns trespassers to
+the land of the dead. All evidence indicates that the beliefs of the ancient
+Zorkers were obscure.")>
+
 <ROOM SOUTH-TEMPLE	;"was TEMP2"
       (IN ROOMS)
       (LDESC
