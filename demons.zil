@@ -6,7 +6,7 @@
       <SET CNT 0>
       <REPEAT ()
 	      <SET CNT <+ .CNT 1>>
-	      <COND (<==? .CNT .LEN> <RETURN>)>
+	      <COND (<G? .CNT .LEN> <RETURN>)>
 	      <SET OO <GET ,VILLAINS .CNT>>
 	      <COND (<IN? <SET O <GET .OO ,V-VILLAIN>> ,HERE>
 		     <COND (<AND <==? .O ,THIEF> ,THIEF-ENGROSSED>

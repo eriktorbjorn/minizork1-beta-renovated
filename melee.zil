@@ -105,7 +105,7 @@
 	 <SET CNT 0>
 	 <REPEAT ()
 		 <SET CNT <+ .CNT 1>>
-		 <COND (<==? .CNT .LEN>
+		 <COND (<G? .CNT .LEN>
 			<RETURN T>)>
 		 <SET OO <GET ,VILLAINS .CNT>>
 		 <SET O <GET .OO ,V-VILLAIN>>
@@ -223,7 +223,7 @@ property, which is normally 0"
 		(RES OA OD ATT DEF FIX) FIX (HERO?) <OR ATOM FALSE>)
 	 <REPEAT ()
 		 <SET CNT <+ .CNT 1>>
-		 <COND (<==? .CNT .LEN> <RETURN>)>
+		 <COND (<G? .CNT .LEN> <RETURN>)>
 		 <SET OO <GET ,VILLAINS .CNT>>
 		 <COND (<==? <GET .OO ,V-VILLAIN> ,PRSO>
 			<RETURN>)>>
