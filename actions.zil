@@ -523,6 +523,9 @@ metal bolt." CR>
 "Nothing happens." CR>
 				    T)
 				   (ELSE
+				    <FSET ,RESERVOIR ,RLANDBIT>
+				    <FCLEAR ,RESERVOIR ,RWATERBIT>
+				    <FCLEAR ,TRUNK ,INVISIBLE>
 				    <SETG LOW-TIDE T>
 				    <TELL
 "The sluice gates open and water pours through the dam." CR>
