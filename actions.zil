@@ -1196,7 +1196,7 @@ large lid, which is ">
 						   (ELSE <RETURN>)>>
 				     <MOVE ,GUNK ,MACHINE>)>)>)
 		      (ELSE
-		       <TELL "It seems that a " D ,PRSO " won't do." CR>)>)>>
+		       <TELL "It seems that a " D ,PRSI " won't do." CR>)>)>>
 
 <ROUTINE GUNK-FUNCTION ()
 	 <REMOVE ,GUNK>
