@@ -746,7 +746,8 @@ drink, anyway?)." CR>
 	       <ENABLE <QUEUE I-CYCLOPS -1>>
 	       <TELL 
 "The cyclops shrugs and ignores your pitiful effort." CR>
-	       <COND (<VERB? THROW> <MOVE ,PRSO ,HERE>)>)
+	       <COND (<VERB? THROW> <MOVE ,PRSO ,HERE>)>
+	       <RTRUE>)
 	      (<VERB? TAKE>
 	       <TELL
 "The cyclops doesn't take kindly to being grabbed." CR>)
