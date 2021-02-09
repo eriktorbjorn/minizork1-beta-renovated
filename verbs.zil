@@ -1114,7 +1114,7 @@ by knocking down the wall on the east of the room." CR>
          <TELL <PICK-ONE ,WHEEEEE> CR>>
 
 <GLOBAL WHEEEEE
-        <LTABLE 0 "Very good. Now you can go to the second grade."
+        <LTABLE "Very good. Now you can go to the second grade."
                "Are you enjoying yourself?"
                "Wheeeeeeeeee!!!!!"
                "Do you expect me to applaud?">>
