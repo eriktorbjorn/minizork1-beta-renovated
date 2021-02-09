@@ -293,7 +293,8 @@ cave, since they may harm other adventurers.  Sorry." CR>
 		 <TELL  
 "Now, let's take a look here...|
 Well, you probably deserve another chance.  I can't quite fix you
-up completely, but you can't have everything." CR>
+up completely, but you can't have everything." CR CR>
+		 <GOTO ,FOREST-EDGE>
 		 <FCLEAR ,TRAP-DOOR ,TOUCHBIT>
 		 <SETG P-CONT <>>
 		 <RANDOMIZE-OBJECTS>
