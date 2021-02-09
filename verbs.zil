@@ -240,6 +240,30 @@ Release ">
 	       (T
 		<PERFORM ,L-PRSA ,L-PRSO ,L-PRSI>)>> 
 
+<ROUTINE V-VERIFY ()
+	 <TELL "Verifying..." CR>
+	 <COND (<VERIFY>
+		<TELL "Correct." CR>)
+	       (T
+		<TELL CR "** Failed! **" CR>)>>
+
+<ROUTINE V-COMMAND-FILE ()
+	 <DIRIN 1>
+	 <RTRUE>>
+
+<ROUTINE V-RANDOM ()
+	 ; "The parser has been stripped of its ability to handle numbers,
+	    so the random seed is hard-coded instead."
+	 <RANDOM -10000>>
+
+<ROUTINE V-RECORD ()
+	 <DIROUT 4>
+	 <RTRUE>>
+
+<ROUTINE V-UNRECORD ()
+	 <DIROUT -4>
+	 <RTRUE>>
+
 \
 
 "SUBTITLE DEATH AND TRANSFIGURATION"
