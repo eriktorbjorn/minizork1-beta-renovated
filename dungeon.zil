@@ -1163,6 +1163,7 @@ A skeleton, probably the remains of a luckless adventurer, lies here.")
 <ROOM MAZE-7	;"was MAZE7"
       (IN ROOMS)
       (LDESC "This is part of a maze of twisty little passages, all alike.")
+      (DESC "Maze")
       (UP TO MAZE-10)
       (WEST TO MAZE-4)
       (DOWN TO MAZE-5) 
