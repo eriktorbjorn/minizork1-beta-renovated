@@ -80,7 +80,7 @@ a dark staircase leads up. To the east is a small window which is ">
 The great stone door shuts behind you as you enter.  Ahead of you is an
 enormous cavern, dimly lit, and beyond a path leads into a dark tunnel.  You
 hear a voice say:  All who stand within this barrow have completed a great
-and perilous adventure which has tested your wit and courage.">
+and perilous adventure which has tested your wit and courage." CR CR>
 		<V-QUIT <>>)>>
 
 <ROUTINE BARROW-FCN ()
