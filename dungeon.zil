@@ -248,7 +248,7 @@
 	(FDESC "On the altar is an open prayer book.")
 	(SIZE 10)
 	(TEXT
-"The book contains instructions for using certain noises and prayers to 
+"The book contains instructions for using certain noises and prayers to
 drive away evil." )>
 
 <OBJECT SCEPTRE	;"was STICK"
@@ -259,7 +259,7 @@ drive away evil." )>
 	(FLAGS TAKEBIT)
 	(ACTION SCEPTRE-FUNCTION)
 	(FDESC
-"An ancient Egyptian sceptre, ornamented with multi-colored jewels, is in 
+"An ancient Egyptian sceptre, ornamented with multi-colored jewels, is in
 the coffin.")
 	(SIZE 3)
 	(VALUE 4)
@@ -723,8 +723,8 @@ the coffin.")
 "In the trophy case is an ancient parchment which appears to be a map.")
 	(SIZE 2)
 	(TEXT
-"It shows a white house in the middle of a clearing within a vast forest, 
-which lies on the edge of a mighty canyon.  The map indicates three paths 
+"It shows a white house in the middle of a clearing within a vast forest,
+which lies on the edge of a mighty canyon.  The map indicates three paths
 leaving the clearing--to the north, east, and southwest.")>
 
 <OBJECT BOAT-LABEL	;"was LABEL"
@@ -844,7 +844,7 @@ against one wall.  He is armed with a deadly stiletto.")
 	(VALUE 6)
 	(TVALUE 4)
 	(FDESC
-"There is a golden canary nestled in the egg.  Through a crystal window 
+"There is a golden canary nestled in the egg.  Through a crystal window
 you can see intricate machinery inside.  It appears to have wound down.")>
 
 <OBJECT BAUBLE	;"was BAUBL"
@@ -882,7 +882,7 @@ you can see intricate machinery inside.  It appears to have wound down.")>
 	(TVALUE 5)
 	(CAPACITY 6)
 	(FDESC
-"In the nest is a large egg encrusted with precious jewels and inlaid with 
+"In the nest is a large egg encrusted with precious jewels and inlaid with
 gold, apparently scavenged somewhere by a childless songbird.")>
 
 \
@@ -919,7 +919,7 @@ gold, apparently scavenged somewhere by a childless songbird.")>
 <ROOM STONE-BARROW	;"was WHOUS"
       (IN ROOMS)
       (LDESC
-"You are east of a massive stone tomb.  Through an open door you see 
+"You are east of a massive stone tomb.  Through an open door you see
 darkness within.")
       (DESC "Stone Barrow")
       (NE TO WEST-OF-HOUSE)
@@ -929,7 +929,7 @@ darkness within.")
 <ROOM NORTH-OF-HOUSE	;"was NHOUS"
       (IN ROOMS)
       (LDESC
-"You are north of the white house.  There is no door here, and all the 
+"You are north of the white house.  There is no door here, and all the
 windows are boarded up.  To the north a narrow path enters the woods.")
       (DESC "North of House")
       (WEST TO WEST-OF-HOUSE)
@@ -942,7 +942,7 @@ windows are boarded up.  To the north a narrow path enters the woods.")
 <ROOM SOUTH-OF-HOUSE	;"was SHOUS"
       (IN ROOMS)
       (LDESC
-"You are south of the white house. There is no door here, and all the 
+"You are south of the white house. There is no door here, and all the
 windows are boarded.")
       (DESC "South of House")
       (WEST TO WEST-OF-HOUSE)
@@ -965,8 +965,8 @@ windows are boarded.")
 
 <ROOM FOREST-EDGE
       (IN ROOMS)
-      (LDESC "You are on a path in a dimly-lit forest.  The path heads west 
-into the heart of the forest, and to the southeast where the trees seem to 
+      (LDESC "You are on a path in a dimly-lit forest.  The path heads west
+into the heart of the forest, and to the southeast where the trees seem to
 thin out.")
       (DESC "Forest Edge")
       (UP "There is no tree here suitable for climbing.")
@@ -979,8 +979,8 @@ thin out.")
 <ROOM PATH	;"was FORE3"
       (IN ROOMS)
       (LDESC
-"This is a path winding through a dimly-lit forest.  The path turns a corner 
-here, heading south and east.  One large tree with some low branches stands 
+"This is a path winding through a dimly-lit forest.  The path turns a corner
+here, heading south and east.  One large tree with some low branches stands
 at the edge of the path.")
       (DESC "Forest Path")
       (UP TO UP-A-TREE)
@@ -1071,9 +1071,9 @@ forbidding hole leading west.  Bloodstains and deep scratches mar the walls.")
 <ROOM STUDIO	;"was STUDI"
       (IN ROOMS)
       (LDESC
-"This appears to have been an artist's studio.  The walls and floors are 
-splattered with paint.  At the west end of the room is an open door.  A 
-narrow chimney leads up from a fireplace; although you might be able to 
+"This appears to have been an artist's studio.  The walls and floors are
+splattered with paint.  At the west end of the room is an open door.  A
+narrow chimney leads up from a fireplace; although you might be able to
 get up it, it seems unlikely you could get back down.")
       (DESC "Studio")
       (WEST TO CELLAR) 
@@ -1229,7 +1229,7 @@ A skeleton, probably the remains of a luckless adventurer, lies here.")
 <ROOM TREASURE-ROOM	;"was TREAS"
       (IN ROOMS)
       (LDESC
-"This room is full of discarded bags, which crumble at your touch.  There 
+"This room is full of discarded bags, which crumble at your touch.  There
 is an exit down a staircase.")
       (DESC "Thief's Den")
       (DOWN TO CYCLOPS-ROOM)
@@ -1280,7 +1280,7 @@ mud pile.  There are 'shores' to the north and south.")
 <ROOM WINDY-CAVE	;"was CAVE2"
       (IN ROOMS)
       (LDESC
-"This is a tiny cave with an entrance on the north, and a 
+"This is a tiny cave with an entrance on the north, and a
 forbidding staircase leading down.")
       (DESC "Windy Cave")
       (NORTH TO ROUND-ROOM)
@@ -1304,7 +1304,7 @@ forbidding staircase leading down.")
 <ROOM ROUND-ROOM	;"was CAROU"
       (IN ROOMS)
       (LDESC
-"This is a circular stone room with passages in all directions, although 
+"This is a circular stone room with passages in all directions, although
 several have been blocked by cave-ins.")
       (DESC "Round Room")
       (EAST TO WHITE-CLIFFS)
@@ -1365,8 +1365,8 @@ thousands of lost souls weeping and moaning.  A passage exits to the north.")
 <ROOM NORTH-TEMPLE	;"was TEMP1"
       (IN ROOMS)
       (LDESC
-"This is the north end of a large temple.  Engraved on the east wall is 
-a prayer in a long-forgotten language.  Below the prayer is a staircase 
+"This is the north end of a large temple.  Engraved on the east wall is
+a prayer in a long-forgotten language.  Below the prayer is a staircase
 leading down.")
       (DESC "Temple")
       (DOWN TO EGYPT-ROOM)
@@ -1407,7 +1407,7 @@ is a small hole in the floor.")
 <ROOM MAINTENANCE-ROOM	;"was MAINT"
       (IN ROOMS)
       (LDESC
-"This was maintenance room for Flood Control Dam #3.  On the wall is an 
+"This was maintenance room for Flood Control Dam #3.  On the wall is an
 important-looking button.  The west wall contains a door.")
       (DESC "Maintenance Room")
       (WEST TO DAM-ROOM)
@@ -1429,7 +1429,7 @@ important-looking button.  The west wall contains a door.")
 <ROOM RIVER-1	;"was RIVR1"
       (IN ROOMS)
       (LDESC
-"You are on a quiet section of the Frigid River near the Dam.  There is 
+"You are on a quiet section of the Frigid River near the Dam.  There is
 a landing on the west shore.")
       (DESC "Frigid River")
       (UP "The current prevents upstream travel.")
@@ -1443,7 +1443,7 @@ a landing on the west shore.")
 <ROOM RIVER-2	;"was RIVR3"
       (IN ROOMS)
       (LDESC
-"The river descends into a valley with a narrow beach on the west shore.  
+"The river descends into a valley with a narrow beach on the west shore.
 In the distance a rumbling can be heard.")
       (DESC "Frigid River")
       (UP "You cannot go upstream due to strong currents.")
@@ -1456,7 +1456,7 @@ In the distance a rumbling can be heard.")
 <ROOM WHITE-CLIFFS
       (IN ROOMS)
       (LDESC
-"You are on a narrow beach at the base of the White Cliffs.  A passage 
+"You are on a narrow beach at the base of the White Cliffs.  A passage
 leads west into the Cliffs.")
       (DESC "White Cliffs Beach")
       (WEST TO ROUND-ROOM IF DEFLATE ELSE "The path is too tight.")
@@ -1467,7 +1467,7 @@ leads west into the Cliffs.")
 <ROOM RIVER-3	;"was RIVR4"
       (IN ROOMS)
       (LDESC
-"The river is running faster here, and the roar of rushing water is almost 
+"The river is running faster here, and the roar of rushing water is almost
 unbearable.  You can see beaches on both the east and west shores.")
       (DESC "Frigid River")
       (UP "You cannot go upstream due to strong currents.")
@@ -1479,8 +1479,8 @@ unbearable.  You can see beaches on both the east and west shores.")
 <ROOM SANDY-BEACH	;"was BEACH"
       (IN ROOMS)
       (LDESC
-"You are on a large sandy beach on the east shore of the river.  A path runs 
-along the river to the south, and a cave that is partially buried in sand 
+"You are on a large sandy beach on the east shore of the river.  A path runs
+along the river to the south, and a cave that is partially buried in sand
 lies to the northeast.")
       (DESC "Sandy Beach")
       (NE TO SANDY-CAVE)
@@ -1510,7 +1510,7 @@ lies to the northeast.")
 <ROOM END-OF-RAINBOW	;"was POG"
       (IN ROOMS)
       (LDESC
-"This is a small beach on the Frigid River below the Falls.  A rainbow 
+"This is a small beach on the Frigid River below the Falls.  A rainbow
 crosses over the falls to the east and a path leads to the southwest.")
       (DESC "End of Rainbow")
       (UP TO ARAGAIN-FALLS IF RAINBOW-FLAG)
@@ -1522,7 +1522,7 @@ crosses over the falls to the east and a path leads to the southwest.")
 <ROOM CANYON-BOTTOM	;"was CLBOT"
       (IN ROOMS)
       (LDESC
-"You are at the base of a river canyon near the flowing runoff of Aragain 
+"You are at the base of a river canyon near the flowing runoff of Aragain
 Falls. The cliff wall may be climbable, and to the northeast is a narrow
 path.")
       (DESC "Canyon Bottom")
@@ -1536,7 +1536,7 @@ path.")
       (LDESC
 "You are atop the west wall of a great canyon.  From here there is a superb
 view of the Frigid River as it flows out of a dark cavern, flanked
-by towering white cliffs.  Below rainbow-clad Aragain Falls, the river twists 
+by towering white cliffs.  Below rainbow-clad Aragain Falls, the river twists
 into a passage which is impossible to enter. Paths enter the forest to
 the west and north.  It is possible to climb down into the canyon from here.")
       (DESC "Canyon View")
@@ -1553,9 +1553,8 @@ the west and north.  It is possible to climb down into the canyon from here.")
 <ROOM MINE-ENTRANCE	;"was ENTRA"
       (IN ROOMS)
       (LDESC
-
-"You are at the entrance of a disused coal mine.  Strange squeaky sounds 
-come from a shaft leading into the north wall, and there is another exit 
+"You are at the entrance of a disused coal mine.  Strange squeaky sounds
+come from a shaft leading into the north wall, and there is another exit
 to the south.")
       (DESC "Mine Entrance")
       (SOUTH TO SLIDE-ROOM)
@@ -1574,9 +1573,9 @@ to the south.")
 <ROOM SHAFT-ROOM	;"was TSHAF"
       (IN ROOMS)
       (LDESC
-"This is a large room with exits to the west and north.  In the middle of 
+"This is a large room with exits to the west and north.  In the middle of
 the room is a small shaft descending through the floor into darkness below.
-Constructed over the top of the shaft is a metal framework to which a heavy 
+Constructed over the top of the shaft is a metal framework to which a heavy
 iron chain is attached.  A foul odor comes from the room to the north.")
       (DESC "Shaft Room")
       (DOWN "You'd never fit.")
@@ -1606,9 +1605,9 @@ iron chain is attached.  A foul odor comes from the room to the north.")
 <ROOM TIMBER-ROOM	;"was TIMBE"
       (IN ROOMS)
       (LDESC
-"This is a long east-west passage which is cluttered with broken timbers.  
-At the east end of the room, a rickety ladder leads through an opening in 
-the roof.  A strong draft comes from the west where the room narrows 
+"This is a long east-west passage which is cluttered with broken timbers.
+At the east end of the room, a rickety ladder leads through an opening in
+the roof.  A strong draft comes from the west where the room narrows
 considerably.")
       (DESC "Timber Room")
       (UP TO MINE-3)
@@ -1622,8 +1621,8 @@ considerably.")
 <ROOM LOWER-SHAFT	;"was BSHAF"
       (IN ROOMS)
       (LDESC
-"This is a drafty room at the bottom of a long shaft. To the south is a 
-passageway and to the east a very narrow crack. In the shaft can be seen 
+"This is a drafty room at the bottom of a long shaft. To the south is a
+passageway and to the east a very narrow crack. In the shaft can be seen
 a heavy iron chain.")
       (DESC "Drafty Room")
       (SOUTH TO MACHINE-ROOM)
@@ -1668,7 +1667,7 @@ a heavy iron chain.")
 
 <ROOM MINE-3	;"was MINE3"
       (IN ROOMS)
-      (LDESC "This is a non-descript part of a coal mine.  The top of a 
+      (LDESC "This is a non-descript part of a coal mine.  The top of a
 rickety ladder pokes through a hole in the floor.")
       (DESC "Coal Mine")
       (WEST TO MINE-3)
@@ -1680,7 +1679,7 @@ rickety ladder pokes through a hole in the floor.")
       (IN ROOMS)
       (LDESC
 "This is a small chamber, which appears to have been part of a coal mine.
-There are openings to the north and east, and a steep metal slide twisting 
+There are openings to the north and east, and a steep metal slide twisting
 downward.")
       (DESC "Slide Room")
       (EAST TO DUSTY-CAVE)

@@ -95,4 +95,3 @@ opponent.">
  <LTABLE
   <LTABLE "The thief, who is essentially a pragmatist, dispatches you as a
 threat to his livelihood.">>>>
-

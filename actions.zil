@@ -16,7 +16,7 @@ front door." CR>
 <ROUTINE EAST-HOUSE (RARG)
 	 <COND (<==? .RARG ,M-LOOK>
 		<TELL 
-"You are behind the white house, where a path enters the forest to the east. 
+"You are behind the white house, where a path enters the forest to the east.
 In one corner of the house there is a small window which is ">
 		<COND (<FSET? ,KITCHEN-WINDOW ,OPENBIT>
 		       <TELL "open.">)
@@ -59,8 +59,8 @@ In one corner of the house there is a small window which is ">
 <ROUTINE KITCHEN-FCN (RARG) 
 	<COND (<==? .RARG ,M-LOOK>
 	       <TELL 
-"You are in the kitchen of the house, where a table has been used recently 
-to make food.  A door leads to the west and, next to a small chimney, 
+"You are in the kitchen of the house, where a table has been used recently
+to make food.  A door leads to the west and, next to a small chimney,
 a dark staircase leads up. To the east is a small window which is ">
 	       <COND (<FSET? ,KITCHEN-WINDOW ,OPENBIT>
 		      <TELL "open." CR>)
@@ -77,9 +77,9 @@ a dark staircase leads up. To the east is a small window which is ">
 		<TELL
 
 "In the Barrow|
-The great stone door shuts behind you as you enter.  Ahead of you is an 
+The great stone door shuts behind you as you enter.  Ahead of you is an
 enormous cavern, dimly lit, and beyond a path leads into a dark tunnel.  You
-hear a voice say:  All who stand within this barrow have completed a great 
+hear a voice say:  All who stand within this barrow have completed a great
 and perilous adventure which has tested your wit and courage.">
 		<V-QUIT <>>)>>
 
@@ -160,7 +160,7 @@ descending into darkness."
 <ROUTINE CELLAR-FCN (RARG)
   <COND (<==? .RARG ,M-LOOK>
 	 <TELL
-"You are in a dark cellar with a passages leading north and east.  To the 
+"You are in a dark cellar with a passages leading north and east.  To the
 west is the bottom of a steep metal ramp." CR>)
 	(<==? .RARG ,M-ENTER>
 	 <COND (<AND <FSET? ,TRAP-DOOR ,OPENBIT>
@@ -201,14 +201,14 @@ west is the bottom of a steep metal ramp." CR>)
 		 <TELL "The rug is too heavy." CR>)
 		(ELSE
 		 <TELL 
-"The rug is too heavy, but in trying to take it you notice something 
+"The rug is too heavy, but in trying to take it you notice something
 beneath it." CR>)>)
 	 (<VERB? MOVE>
 	  <COND (,RUG-MOVED
 		 <DUMMY>)
 		(ELSE
 		 <TELL
-"With effort, the rug moves to reveal the dusty cover of a closed 
+"With effort, the rug moves to reveal the dusty cover of a closed
 trap-door." CR>
 		 <FCLEAR ,TRAP-DOOR ,INVISIBLE>
 		 <SETG RUG-MOVED T>)>)
@@ -415,11 +415,11 @@ five feet above your head." CR>)>)>>
 <ROUTINE DOME-ROOM-FCN (RARG)
 	 <COND (<==? .RARG ,M-LOOK>
 		<TELL
-"You are at a railing near the periphery of a large dome, which forms the 
+"You are at a railing near the periphery of a large dome, which forms the
 ceiling of another room below." CR>
 		<COND (,DOME-FLAG
 		       <TELL 
-"Hanging from the railing is a rope which ends about ten feet from the floor 
+"Hanging from the railing is a rope which ends about ten feet from the floor
 below." CR>)>)>>
 
 <GLOBAL EGYPT-FLAG <>>
@@ -431,7 +431,7 @@ below." CR>)>)>>
 <ROUTINE LLD-ROOM (RARG)
 	 <COND (<==? .RARG ,M-LOOK>
 		<TELL
-"You are outside a large open gateway, on which is inscribed| 
+"You are outside a large open gateway, on which is inscribed|
      \"Abandon every hope, all ye who enter here.\"|
 Thousands of voices, lamenting some hideous fate, can be heard." CR>
 		<COND (<NOT ,LLD-FLAG>
@@ -443,14 +443,14 @@ attempts to pass." CR>)>)
 		 (<AND <NOT ,LLD-FLAG> <VERB? RING> <==? ,PRSO ,BELL>>
 		  <SETG XB T>
 		  <TELL
-"As the bell rings, the spirits stop their jeering and slowly turn to 
+"As the bell rings, the spirits stop their jeering and slowly turn to
 face you, displaying a long-forgotten terror." CR>
 		  <SETG XC T>
 		  <ENABLE <QUEUE I-XC 3>>)
 		 (<AND ,XC <VERB? READ> <==? ,PRSO ,BOOK> <NOT ,LLD-FLAG>>
 		  <TELL
-"The prayer reverberates through the hall.  As the last word fades, a 
-heart-stopping scream fills the cavern, and the spirits flee your unearthly 
+"The prayer reverberates through the hall.  As the last word fades, a
+heart-stopping scream fills the cavern, and the spirits flee your unearthly
 power." CR>
 		  <REMOVE ,GHOST>
 		  <SETG LLD-FLAG T>
@@ -471,7 +471,7 @@ power." CR>
 	 <OR ,XC
 	     <AND <==? ,HERE ,ENTRANCE-TO-HADES>
 		  <TELL
-"The tension of the ceremony is broken, and the spirits, resume their 
+"The tension of the ceremony is broken, and the spirits, resume their
 hideous jeering." CR>>>
 	 <SETG XB <>>>
 
@@ -497,18 +497,18 @@ hideous jeering." CR>>>
 <ROUTINE DAM-ROOM-FCN (RARG) 
    	 <COND (<==? .RARG ,M-LOOK>
 		<TELL
-"You are atop Flood Control Dam #3, which was once quite a tourist 
+"You are atop Flood Control Dam #3, which was once quite a tourist
 attraction.  There are paths to the north and west, and a scramble down." CR>
 		<COND (,LOW-TIDE
 		       <TELL
-"The gates are open and the water level behind the dam is low.  Water 
+"The gates are open and the water level behind the dam is low.  Water
 rushes through the dam and downstream." CR>)
 		      (ELSE
 		       <TELL
-"The sluice gates on the dam are closed.  Behind the dam is a wide 
+"The sluice gates on the dam are closed.  Behind the dam is a wide
 reservoir.  Water is pouring over the abandoned dam." CR>)>
 		<TELL 
-"There is a control panel here.  Protruding from the panel is a large 
+"There is a control panel here.  Protruding from the panel is a large
 metal bolt." CR>
 		<COND (,GATE-FLAG
 		       <TELL "The panel is emitting a low-level hum." CR>)>)>>
@@ -561,7 +561,7 @@ metal bolt." CR>
 	<COND (<==? .RARG ,M-LOOK>
 	       <COND (,LOW-TIDE
 		      <TELL
-"You are in a long room south of a reservoir.  However, with the water 
+"You are in a long room south of a reservoir.  However, with the water
 level lowered, there is merely a muddy stream to the north.">)
 		     (ELSE
 		      <TELL 
@@ -569,14 +569,14 @@ level lowered, there is merely a muddy stream to the north.">)
 too deep and wide for crossing.">)>
 	       <CRLF>
 	       <TELL 
-"Rocky passages head toward the south and southwest.  To the east, a 
+"Rocky passages head toward the south and southwest.  To the east, a
 mighty structure can be seen." CR>)>>
 
 <ROUTINE RESERVOIR-NORTH-FCN (RARG) 
 	<COND (<==? .RARG ,M-LOOK>
 	       <COND (,LOW-TIDE
 		      <TELL 
-"You are in a cavernous room north of what was formerly a lake. However, 
+"You are in a cavernous room north of what was formerly a lake. However,
 with the water level lowered, there is merely a muddy stream to the south.">)>
 	       <CRLF>
 	       <TELL
@@ -698,7 +698,7 @@ with the water level lowered, there is merely a muddy stream to the south.">)>
 			     <REMOVE ,FOOD>
 			     <TELL
 "The cyclops says 'Mmm Mmm.  I love hot peppers!  But oh, could I use
-a drink--perhaps some blood.'  From the gleam in his eye, it is clear whose 
+a drink--perhaps some blood.'  From the gleam in his eye, it is clear whose
 blood he means." CR>
 			     <SETG CYCLOWRATH <MIN -1 <- .COUNT>>>)>
 		      <ENABLE <QUEUE I-CYCLOPS -1>>)
@@ -743,7 +743,7 @@ drink, anyway?)." CR>
 		<COND (<G? <ABS ,CYCLOWRATH> 5>
 		       <DISABLE <INT I-CYCLOPS>>
 		       <JIGS-UP 
-"The cyclops, tired of all of your games eats you. 
+"The cyclops, tired of all of your games eats you.
 The cyclops says 'Mmm.  Just like Mom used to make 'em.'">)
 		      (ELSE
 		       <COND (<L? ,CYCLOWRATH 0>
@@ -766,11 +766,11 @@ The cyclops says 'Mmm.  Just like Mom used to make 'em.'">)
 "The east wall, previously solid, now has a cyclops-sized hole in it." CR>)
 		     (<0? ,CYCLOWRATH>
 		      <TELL
-"A hungry-looking cyclops blocks the staircase.  From the bloodstains on the 
+"A hungry-looking cyclops blocks the staircase.  From the bloodstains on the
 walls you guess that he is not very friendly, though he likes people." CR>)
 		     (<G? ,CYCLOWRATH 0>
 		      <TELL
-"The cyclops is standing in the corner, eyeing you closely.  He looks 
+"The cyclops is standing in the corner, eyeing you closely.  He looks
 very hungry, even for a cyclops." CR>)
 		     (<L? ,CYCLOWRATH 0>
 		      <TELL 
@@ -784,7 +784,7 @@ His enflamed tongue protrudes from his man-sized mouth." CR>)>)
 	  "The cyclops seems agitated."
 	  "The cyclops appears to be getting more agitated."
 	  "The cyclops is looking for something."
-	  "The cyclops was looking for salt and pepper.  I think he is 
+	  "The cyclops was looking for salt and pepper.  I think he is
 preparing for a snack."
 	  "The cyclops is moving toward you in an unfriendly manner."
 	  "You have two choices: 1. Leave  2. Become dinner.">>
@@ -1122,8 +1122,8 @@ is holding his nose." CR>)>)
 	 <COND (<==? .RARG ,M-LOOK>
 		<TELL
 "In one corner of this chilly room is a machine shaped somewhat like a
-clothes dryer, with a grooved switch labelled START.  The switch is so 
-small that your fingers can not turn it.  On top of the machine is a 
+clothes dryer, with a grooved switch labelled START.  The switch is so
+small that your fingers can not turn it.  On top of the machine is a
 large lid, which is ">
 		<COND (<FSET? ,MACHINE ,OPENBIT>
 		       <TELL "open.">)
@@ -1224,7 +1224,7 @@ large lid, which is ">
 <ROUTINE FALLS-ROOM (RARG)
     <COND (<==? .RARG ,M-LOOK>
 	   <TELL
-"You are near the top of Aragain Falls, an enormous waterfall.  The only path 
+"You are near the top of Aragain Falls, an enormous waterfall.  The only path
 here is on the north end." CR>
 	   <COND (,RAINBOW-FLAG
 		  <TELL
@@ -1277,8 +1277,8 @@ here is on the north end." CR>
 "The " D ,PRSO " splashes into the water and is gone forever." CR>)>)>)
 	       (<VERB? LEAP>
 		<TELL
-"A look before leaping reveals that the river is dangerous,with 
-swift currents and sharp rocks.  You therefore decide to 
+"A look before leaping reveals that the river is dangerous, with
+swift currents and sharp rocks.  You therefore decide to
 forgo your ill-considered swim." CR>)>>
 
 <GLOBAL RIVER-SPEEDS
@@ -1302,7 +1302,7 @@ forgo your ill-considered swim." CR>)>>
 		<ENABLE <QUEUE I-RIVER <LKP ,HERE ,RIVER-SPEEDS>>>)
 	       (T
 		<JIGS-UP
-"Unfortunately, a rubber raft doesn't provide much protection from the rocks 
+"Unfortunately, a rubber raft doesn't provide much protection from the rocks
 and boulders at the bottom of many waterfalls.  Including this one.">)>>
 
 <ROUTINE RBOAT-FUNCTION ("OPTIONAL" (RARG <>))
@@ -1652,4 +1652,3 @@ in the grass.  When the song ends, the bird flies away." CR>
 		<TELL "You must specify a direction to go." CR>)
 	       (<VERB? FIND>
 		<TELL "I can't help you there...." CR>)>>
-
