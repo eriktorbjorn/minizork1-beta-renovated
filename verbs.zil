@@ -180,7 +180,7 @@ for the final secret.\"" CR>)>
 		<SCORE-UPD .TEMP>
 		<PUTP .OBJ ,P?VALUE 0>)>>
 
-<GLOBAL SCORE-MAX 350>
+<GLOBAL SCORE-MAX 287>
 
 <ROUTINE V-SCORE ("OPTIONAL" (ASK? T))
 	 #DECL ((ASK?) <OR ATOM FALSE>)
