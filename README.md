@@ -5,7 +5,8 @@ attempt. These two versions appear to have been made independent of
 each other, because they differ in several ways.
 
 In restoring it to working condition, I have tried resisting the
-temptation to add new gameplay elements.
+temptation to add new gameplay elements. Certain game-breaking bugs
+and obvious contradictions have been fixed, though.
 
 ## Things I have changed
 
