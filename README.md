@@ -32,9 +32,6 @@ changes include:
   was already code for doing that, but it was in an action routine for
   a room that had been removed.)
 
-* Added a message for when the pot of gold appears. It seemed cruel
-  not to.
-
 * The thief didn't fight back. Now he does.
 
 * When the player dies and is resurrected, move him to the forest

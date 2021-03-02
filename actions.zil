@@ -1242,8 +1242,6 @@ large lid, which is ">
 		       <FCLEAR ,POT-OF-GOLD ,INVISIBLE>
 		       <TELL
 "Suddenly, the rainbow appears to become solid." CR>
-		       <COND (<EQUAL? ,HERE ,END-OF-RAINBOW>
-			      <TELL "A shimmering pot of gold appears." CR>)>
 		       <SETG RAINBOW-FLAG T>)
 		      (ELSE
 		       <TELL 
