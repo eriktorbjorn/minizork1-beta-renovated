@@ -38,7 +38,10 @@ changes include:
   instead of leaving him in the same room.
 
 * The maximum score 287, not 350, as far as I can tell. Changed that
-  so that the map will appear at the end.
+  so that the map will appear at the end. (Note that scoring is still
+  a bit odd. The sword is condsidered a treasure while it's glowing,
+  and since the cyclops room is right next to the living room you can
+  easily get a point for putting the sword in the trophy case.)
 
 * A number of little bugs have been fixed where the game would print
   the wrong message, or even garbage.
