@@ -20,7 +20,7 @@ changes include:
   the west.
 
 * Some things that had been removed were still referenced. I've
-  restored the misssing bits with code from the full game. Most
+  restored the missing bits with code from the full game. Most
   noticeably, the prayer on the temple wall.
 
 * It is now possible to cross the reservoir after draining it.
